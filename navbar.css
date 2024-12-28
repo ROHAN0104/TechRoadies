@@ -1,0 +1,36 @@
+nav{
+    z-index: 100; 
+    width: 100%;
+    padding:1.25em 0.125em;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+}
+.logo{
+    width: 2em;
+    }
+.logo:hover{
+    animation-name: spinner;
+    animation-timing-function:linear;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    fill:#FE76FF;
+}
+.n1,.n2,.n3,.n4{
+    letter-spacing: 0.2rem;
+    font-family: 'VCR OSD Mono', sans-serif;
+    text-decoration: none;
+    color:#A0FDE2;
+    text-align: left;
+    font-size: 1.5vmax;
+    padding: 0.625rem 1.25rem;
+}
+.n5,.n6{
+    font-family: 'VCR OSD Mono', sans-serif;
+    text-decoration: none;
+    border:white solid 0.188rem;
+    border-radius: 1.875rem;
+    color:#ffffff;
+    font-size: 1.5vmax;
+    padding: 0.313rem 1.25rem;
+}

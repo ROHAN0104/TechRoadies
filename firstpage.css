@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+a,button{
+    cursor: url("cursor.svg"),pointer;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+body{
+    cursor: url("cursor-01-01.svg"),pointer;
+    height: 100vh;
+    box-sizing: border-box;
+}
+body{
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+}
+.container1{
+    height: 100%;
+    scroll-snap-align: start;
+}
+.scrollup{
+    top:85%;
+    left:90%;
+    z-index: 101;
+    backdrop-filter: blur(0.050em);
+    background-color: rgba(255, 255, 255, 0.157);
+    font-family: 'VCR OSD Mono' ;
+    color:white;
+    text-decoration: none;
+    font-size: 3vmax;
+    padding-top: 1vmax;
+    padding-left: 1.2vmax;
+    padding-right: 1.2vmax;
+    border:solid 0.2vmax white;
+    border-radius: 100%;
+    position: fixed;
+}
+.container1{
+    scroll-snap-align: start;
+    overflow: hidden;
+    position: relative;
+    z-index: 21;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#724688,#000429);
+}
+.header1{
+    padding-top: 15%;
+    position: relative;
+    z-index: 20;
+    overflow: hidden;
+}
+.hd1{
+    width: fit-content;
+    mix-blend-mode: overlay;
+    -webkit-text-fill-color: #FE76FF;
+    font-size: 3vmax;
+    font-family: 'VALORANT';
+    width: fit-content;
+}
+.hd2{
+    font-size: 6vmax;
+    font-family: 'VALORANT';
+    -webkit-text-stroke-color: #A0FDE2;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.03em;
+    width: fit-content;
+    padding-left: 100px;
+    mix-blend-mode: overlay;
+    width: fit-content;
+}
+/* .hd2::after{
+    content: "For walking towards success!";
+    font-family: 'VCR OSD Mono';
+    -webkit-text-fill-color: #FE76FF;
+    -webkit-text-stroke-width: 0;
+    font-size: 2.5vmax;
+    background-color: tomato;
+    margin-top: -15em;
+} */
+@media (min-width: 1000px) {
+    .hd1{
+        animation: l_in2 0.5s 1 reverse forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .hd2{
+        animation: r_in2 0.5s 1 reverse forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .scrollup:hover{
+        animation-name: blink;
+        animation-iteration-count: infinite;
+        animation-duration: 0.1s;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        filter: drop-shadow(0em 0em 0.1em #ffffff);
+        transform: scale(1.2);
+    }
+    .head1:hover{
+        animation-name: blink;
+        animation-iteration-count:infinite;
+        animation-duration:0.1s;
+        animation-timing-function: ease-in-out;
+    }
+    .container1:hover .bg{
+        animation: in 0.5s 1 normal forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .container1:hover header .hd1{  
+        animation: l_in 0.5s 1 normal forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .container1:hover header .hd2{
+        animation: r_in 0.5s 1 normal forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .n1:hover,.n2:hover,.n3:hover,.n4:hover{
+        animation-name: blink;
+        animation-iteration-count: infinite;
+        animation-duration: 0.1s;
+        color: white;
+    }
+    .n5:hover,.n6:hover{
+        color: rgb(2, 0, 24);
+        background-color: white;
+    }
+}
+@keyframes blink {
+    from{
+        mix-blend-mode:normal;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0em 0em 0.5em #ffffff00;
+        }
+    to{
+        mix-blend-mode:normal;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: white;
+        -webkit-text-stroke-width:2px;
+        text-shadow: 0em 0em 0.5em #ffffff;
+        color: #ffffff;}
+}
+
+@keyframes spinner {from {transform: rotateY(0deg);}to {transform: rotateY(360deg);}}
+@keyframes in{from{ -webkit-transform: scale(1);filter: blur(0px);}to {filter: blur(5px); -webkit-transform: scale(1.2);}}
+@keyframes in2 {from{ filter: blur(0px);-webkit-transform: scale(1);}to{filter: blur(5px); -webkit-transform: scale(1.2);}}
+@keyframes l_in {from{transform: translateX(-0.1em); opacity: 0%;}to{transform: translateX(2em);opacity: 100%;}}
+@keyframes l_in2 {from{transform: translateX(-0.1em);opacity: 0%;}to {transform: translateX(2em);opacity: 100%;}}
+@keyframes r_in {from{transform: translateX(5em);opacity: 0%}to {transform: translateX(0em);opacity: 100%;}}
+@keyframes r_in2 {from{transform: translateX(5em);opacity: 0%}to {transform: translateX(0em);opacity: 100%;}}

@@ -1,0 +1,81 @@
+.container4{
+    height: 100%;
+    scroll-snap-align: start;
+    background-image: linear-gradient(#53566F,#B8C1DE);
+    overflow:hidden;
+}
+.header4_1 .cont_us{
+    padding-left: 0.03em;
+    padding-right: 0.03em;
+}
+.header4_1{
+    position: relative;
+    z-index: 70;
+    padding-top: 11em;
+    padding-right: 5em;
+    justify-content: right;
+    display: flex;
+    width: 100%;
+    transform: translateX(-5em);
+}
+.contact{
+    padding-bottom: 11em;
+}
+.cont_us{
+    font-size: 10vmax;
+    font-family: 'VALORANT';
+    color:#FFE69D;
+    text-align: right;
+}
+.cont_us2{
+    padding-right: 0.5em;
+    font-size: 10vmax;
+    font-family: 'VALORANT';
+    color:#FFE69D;
+    text-align: right;
+}
+.contactss a{
+    padding-left: 2em;
+    color: #D2F9FF;
+    text-decoration: none;
+    font-family: 'VCR OSD Mono';
+    font-size: 3.125vmax;
+}
+.contactss a:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    color: rgb(21, 35, 83);
+}
+.contactss a img{
+    filter: invert(100%);
+    width: 1em;
+    padding-right: 0.5em;
+}
+@media (min-width: 1000px){
+    .cont_us:nth-child(1),.cont_us:nth-child(2),.cont_us:nth-child(3){
+        animation: up_in2 0.3s 1 reverse forwards;
+         animation-timing-function: ease-in-out;
+    }
+    .cont_us:nth-child(4),.cont_us:nth-child(5),.cont_us:nth-child(6){
+        animation: up_in2 0.3s 1 reverse forwards;
+         animation-timing-function: ease-in-out;
+    }
+    .cont_us:nth-child(7){
+        animation: up_in2 0.3s 1 reverse forwards;
+         animation-timing-function: ease-in-out;
+    }
+    .cont_us:nth-child(1):hover,.cont_us:nth-child(2):hover,.cont_us:nth-child(3):hover{
+        animation: up_in 0.3s 1 normal forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .cont_us:nth-child(4):hover,.cont_us:nth-child(5):hover,.cont_us:nth-child(6):hover{
+        animation: up_in 0.3s 1 normal forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .cont_us:nth-child(7):hover{
+        animation: up_in 0.3s 1 normal forwards;
+        animation-timing-function: ease-in-out;
+    }
+}
+@keyframes up_in {from{transform: translateY(0em);}to {transform: translateY(-0.5em);}}
+@keyframes up_in2 {from{transform: translateY(0em);}to {transform: translateY(-0.5em);}}

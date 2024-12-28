@@ -1,0 +1,72 @@
+.head4{
+    text-align: center;
+    color: #AC63B9;
+    font-family: 'VALORANT';
+    font-size: 12vmax;
+}
+.icon{
+    filter: invert(100%);
+    padding-right: 0.5em;
+}
+.container3{
+    height: 100%;
+    scroll-snap-align: start;
+    background-image: linear-gradient(#000429,#545770);
+}
+.res_all{
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    list-style: none;
+}
+.res_head{
+    color: #AC63B9;
+    font-family: 'VCR OSD Mono';
+    font-size: 2vmax;
+}
+.links li a{
+    text-decoration: none;
+    color:white;
+    font-family: 'VCR OSD Mono';
+    font-size: 1.875vmax;
+    animation: links_in2 0.5s 1 reverse forwards;
+    animation-timing-function: ease-in-out;
+    line-height: 1.5em;
+    padding: 0.1em;
+}
+.links li{
+    padding: 0.5em;
+}
+.Resources{
+    padding: 2em;
+}
+.links,.Resources{
+    padding-top: 1.5vmax;
+}
+.c3{
+    padding-top: 8em;
+    padding-bottom: 8em ;
+}
+.links li a:hover{
+    animation: links_in 0.5s 1 normal forwards;
+    animation-timing-function: ease-in-out;
+}
+@media (min-width: 1000px){
+    .head4{
+        animation: u_in2 0.5s 1 reverse forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .container3:hover .head4{
+        animation: u_in 0.5s 1 normal forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .head4:hover{
+        color: transparent;
+        stroke-width: 0.0em;
+        -webkit-text-stroke-width: 0.001em;
+        -webkit-text-stroke-color: white;
+    }
+}
+@keyframes links_in {from{letter-spacing: 0em;}to {letter-spacing: 0.1em;}}
+@keyframes links_in2 {from{letter-spacing: 0em;}to {letter-spacing: 0.1em;}}

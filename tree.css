@@ -1,0 +1,64 @@
+.grand-parent,.course_top{
+  font-family: 'VCR OSD Mono';
+  display: flex;
+  justify-content: space-evenly;
+}
+.course_top{
+  width: 100vw;
+  padding-bottom: 5vmax;
+  justify-items: center;
+}
+.course_top a{
+  text-decoration: none;
+  font-family: 'VCR OSD Mono';
+  font-size: 1vmax;
+  color: white;
+  padding: 1vmax 2vmax;
+  background-color: rgba(84, 148, 0, 0.753);
+  border: 0.1em solid white;
+  border-radius: 0.5vmax;
+}
+.course_top a:hover{
+  background-color: rgba(61, 107, 0, 0.753);
+}
+
+.parent ul{
+  opacity: 0;
+  transform: translateY(-1em);
+  pointer-events: none;
+}
+.parent ul li {
+  list-style: none;
+  padding-top: 1.5vmax;
+}
+.parent ul li a{
+  font-size: 1vmax;
+  text-decoration: none;
+  color: white;
+  padding: 0.5vmax 1vmax;
+  background-color: rgba(0, 76, 148, 0.753);
+  border: 0.1em solid white;
+  border-radius: 0.5vmax;
+}
+.parent ul li a:hover{
+  background-color: rgba(43, 111, 173, 0.753);
+}
+.parent button{
+  font-family: 'VCR OSD Mono';
+  color: white;
+  font-size: 1vmax;
+  padding: 0.5vmax 1vmax;
+  background-color: rgba(148, 0, 148, 0.753);
+  border: 0.1em solid white;
+  border-radius: 0.5vmax;
+}
+.parent button:hover{
+  background-color: rgba(148, 67, 148, 0.753);
+}
+.parent button:focus + ul{
+  opacity: 100;
+  pointer-events: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+  transform: translateY(0em);
+}

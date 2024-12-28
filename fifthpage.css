@@ -1,0 +1,120 @@
+.container5{
+    height: 100%;
+    scroll-snap-align: start;
+    background-color: #B8C1DE;
+    overflow:hidden;
+    position: relative;
+    z-index: 80;
+}
+.container5 header{
+    padding-top: 0.5vmax;
+}
+.container5 header h1{
+    padding-top: 5vmax;
+    padding-bottom: 2vmax;
+}
+.about_us{
+    width: 90%;
+    padding: 0em;
+    padding-left: 3em;
+    font-size: 1.5vmax;
+    font-family: 'VCR OSD Mono';
+    color: #2F3F4C;
+}
+.head5{
+    padding-left: 0.5em;
+    font-size: 6vmax;
+    font-family: 'VALORANT';
+    color: #2F3F4C;
+    padding-top: 0.7em;
+}
+.head5_2{
+    padding-left: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 2.5vmax;
+    text-align: left;
+    font-family: 'VALORANT';
+    color: #2F3F4C;
+}
+.img1 img{
+    width: 50em;
+}
+.cardholder{
+    padding-left: 1.5em;
+    padding-bottom: 0.5em;
+    justify-content: space-evenly;
+    display: flex;
+}
+.fullname{
+    padding: 0.5em;
+    font-size: 1.5vmax;
+    font-family: 'VCR OSD Mono';
+    color: rgba(255, 255, 255, 0);
+    text-shadow: 0rem 0rem 1em rgba(255, 255, 255, 0);
+}
+.cards{
+    border-radius: 1.5em;
+    width: 10vmax;
+    height: 15vmax;
+    background-repeat: no-repeat;
+    box-shadow: 0 70px 63px -60px #000000;
+    box-sizing: border-box;
+    border: white solid 0.2em;
+}
+.card1{
+    background: url(Anurag.jpg);
+}
+.card2{
+    background: url(Anuska.jpg);
+}
+.card3{
+    background: url(Debangshu.jpg);
+}
+.card4{
+    background: url(Rohan.jpg);
+}
+.card5{
+    background: url(Subhoraj.jpg);
+}
+.sns{
+    padding-bottom: 0.2vmax;
+    width: 2.2vmax;
+    padding-left: 0.5vmax;
+    opacity: 0;
+}
+
+@media (min-width: 1000px){
+    .cards:hover{
+        animation: img_in 0.7s 1 normal forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .cards:hover .fullname{
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        color: rgb(255, 255, 255);
+        text-shadow: 0rem 0rem 1em rgb(255, 255, 255);
+    }
+    .cards:hover .sns{
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        opacity: 100;
+    }
+    .cards{
+        backdrop-filter: blur(0px);
+        animation: img_in2 0.7s 1 reverse forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .head5{
+        animation: h5_in2 0.5s 1 reverse forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .container5:hover header .head5{  
+        animation: h5_in 0.5s 1 normal forwards;
+        animation-timing-function: ease-in-out;
+    }
+}
+@keyframes h5_in {from{transform: translateX(-1em);opacity: 0%;}to{transform: translateX(0em);opacity: 100%;}}
+@keyframes h5_in2 {from{transform: translateX(-1em);opacity: 0%;}to {transform: translateX(0em);opacity: 100%;}}
+@keyframes img_in {from{background-size: 160%;background-position: center;}to {background-size:200%;background-position: left;}}
+@keyframes img_in2 {from{background-size: 160%;background-position: center;}to {background-size:200%;background-position: left;}}

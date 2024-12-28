@@ -1,0 +1,90 @@
+.container2{
+    scroll-snap-align: start;
+    position: relative;
+    z-index: 98;
+    background-color: #000429;
+    overflow: hidden;
+    height: 100%;
+}
+.header2{
+    padding-top: 10vmax;
+}
+.courses{
+    padding-top: 1vmax;
+    padding-left: 4vmax;
+    padding-right: 4vmax;
+}
+@keyframes typing { 
+    from { width: 0; }
+}
+@keyframes caret { 
+    50% { border-color: transparent; }
+}
+.head3{
+    padding-left: 4vmax;
+    color: #FF296D;
+    font-family: 'VCR OSD Mono';
+    font-size: 12vmax;
+    width:8ch;
+    overflow: hidden; 
+    white-space: nowrap; 
+    border-right: 1.5vmax solid white;
+    animation: typing 6s steps(8)infinite,caret 1s steps(1)infinite;
+}
+.btech,.bsc,.bca{
+    display: flex;
+    font-family: 'VCR OSD Mono';
+    font-size:3vmax;
+}
+.c_name{
+    color: white;
+    font-family: 'VCR OSD Mono';
+    text-decoration: none;
+    position: relative;
+    z-index: 40;
+    font-size: 3vmax;
+    padding: 0.5vmax 1vmax;
+    background-color: #000429;
+    border: none;
+    font-weight: bold;
+}
+.c_name:hover{
+    color: #00D8E8;
+    letter-spacing: 0.09vmax;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.bt_l,.bsc_l{
+    display: flex;
+    position: relative;
+    z-index: 38;
+    opacity: 0;
+    transform: translateX(-5vmax);
+    pointer-events: none;
+}
+.bt_l li a,.bsc_l li a{
+    color: #00D8E8;
+    text-decoration: none;
+    position: relative;
+    padding: 0.5vmax 1vmax;
+    top:0.5vmax
+}
+.bt_l li a:hover,.bsc_l li a:hover{
+    color: white;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+.btech button:focus + ul,.bsc button:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transform: translateX(0vmax);
+}
+.bt_l li a{
+    pointer-events: all;
+}
+@keyframes u_in {from{transform: translateY(-0.5em);opacity: 0%;}to {transform: translateY(0em);opacity: 100%;}}
+@keyframes u_in2 {from{transform: translateY(-0.5em);opacity: 0%;}to {transform: translateY(0em);opacity: 100%;}}
+@keyframes courses_in {from{margin-left: -5em;}to {margin-left: 0em;}}
+@keyframes courses_in2 {from{margin-left: -5em;}to {margin-left: 0em;}}
